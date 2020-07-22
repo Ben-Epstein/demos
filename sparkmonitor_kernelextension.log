@@ -1,0 +1,295 @@
+INFO:  2020-07-22 17:09:13,661 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Client Connected ('127.0.0.1', 45912) 
+
+INFO:  2020-07-22 17:09:13,717 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkApplicationStart",
+  "startTime" : 1595437751974,
+  "appId" : "spark-application-1595437753527",
+  "appAttemptId" : "null",
+  "appName" : "pyspark-shell",
+  "sparkUser" : "jovyan"
+}
+ 
+
+INFO:  2020-07-22 17:09:16,885 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkExecutorAdded",
+  "executorId" : "1",
+  "time" : 1595437756879,
+  "host" : "10.0.5.104",
+  "numCores" : 5,
+  "totalCores" : 5
+}
+ 
+
+INFO:  2020-07-22 17:09:17,073 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkExecutorAdded",
+  "executorId" : "2",
+  "time" : 1595437757072,
+  "host" : "10.0.1.196",
+  "numCores" : 5,
+  "totalCores" : 10
+}
+ 
+
+INFO:  2020-07-22 17:09:31,609 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkJobStart",
+  "jobGroup" : "null",
+  "jobId" : 0,
+  "status" : "RUNNING",
+  "submissionTime" : 1595437771583,
+  "stageIds" : [ 0 ],
+  "stageInfos" : {
+    "0" : {
+      "attemptId" : 0,
+      "name" : "showString at NativeMethodAccessorImpl.java:0",
+      "numTasks" : 1,
+      "completionTime" : -1,
+      "submissionTime" : -1
+    }
+  },
+  "numTasks" : 1,
+  "totalCores" : 10,
+  "appId" : "spark-application-1595437753527",
+  "numExecutors" : 2,
+  "name" : "null"
+}
+ 
+
+INFO:  2020-07-22 17:09:31,619 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkStageSubmitted",
+  "stageId" : 0,
+  "stageAttemptId" : 0,
+  "name" : "showString at NativeMethodAccessorImpl.java:0",
+  "numTasks" : 1,
+  "parentIds" : [ ],
+  "submissionTime" : 1595437771601,
+  "jobIds" : [ 0 ]
+}
+ 
+
+INFO:  2020-07-22 17:09:31,774 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkTaskStart",
+  "launchTime" : 1595437771742,
+  "taskId" : 0,
+  "stageId" : 0,
+  "stageAttemptId" : 0,
+  "index" : 0,
+  "attemptNumber" : 0,
+  "executorId" : "2",
+  "host" : "10.0.1.196",
+  "status" : "RUNNING",
+  "speculative" : false
+}
+ 
+
+INFO:  2020-07-22 17:09:33,357 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkTaskEnd",
+  "launchTime" : 1595437771742,
+  "finishTime" : 1595437773309,
+  "taskId" : 0,
+  "stageId" : 0,
+  "taskType" : "ResultTask",
+  "stageAttemptId" : 0,
+  "index" : 0,
+  "attemptNumber" : 0,
+  "executorId" : "2",
+  "host" : "10.0.1.196",
+  "status" : "SUCCESS",
+  "speculative" : false,
+  "metrics" : {
+    "shuffleReadTime" : 0,
+    "shuffleWriteTime" : 0,
+    "serializationTime" : 0,
+    "deserializationTime" : 371,
+    "gettingResultTime" : 0,
+    "executorComputingTime" : 1140,
+    "schedulerDelay" : 56,
+    "shuffleReadTimeProportion" : 0.0,
+    "shuffleWriteTimeProportion" : 0.0,
+    "serializationTimeProportion" : 0.0,
+    "deserializationTimeProportion" : 23.675813656668794,
+    "gettingResultTimeProportion" : 0.0,
+    "executorComputingTimeProportion" : 72.75047862156988,
+    "schedulerDelayProportion" : 3.5737077217613273,
+    "shuffleReadTimeProportionPos" : 27.24952137843012,
+    "shuffleWriteTimeProportionPos" : 100.0,
+    "serializationTimeProportionPos" : 100.0,
+    "deserializationTimeProportionPos" : 3.5737077217613273,
+    "gettingResultTimeProportionPos" : 100.0,
+    "executorComputingTimeProportionPos" : 27.24952137843012,
+    "schedulerDelayProportionPos" : 0,
+    "resultSize" : 2100,
+    "jvmGCTime" : 61,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "peakExecutionMemory" : 0,
+    "test" : 0
+  }
+}
+ 
+
+INFO:  2020-07-22 17:09:33,364 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkStageCompleted",
+  "stageId" : 0,
+  "stageAttemptId" : 0,
+  "completionTime" : 1595437773320,
+  "submissionTime" : 1595437771601,
+  "numTasks" : 1,
+  "status" : "COMPLETED"
+}
+ 
+
+INFO:  2020-07-22 17:09:33,370 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkJobEnd",
+  "jobId" : 0,
+  "status" : "SUCCEEDED",
+  "completionTime" : 1595437773324
+}
+ 
+
+INFO:  2020-07-22 17:09:33,371 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkJobStart",
+  "jobGroup" : "null",
+  "jobId" : 1,
+  "status" : "RUNNING",
+  "submissionTime" : 1595437773335,
+  "stageIds" : [ 1 ],
+  "stageInfos" : {
+    "1" : {
+      "attemptId" : 0,
+      "name" : "showString at NativeMethodAccessorImpl.java:0",
+      "numTasks" : 1,
+      "completionTime" : -1,
+      "submissionTime" : -1
+    }
+  },
+  "numTasks" : 1,
+  "totalCores" : 10,
+  "appId" : "spark-application-1595437753527",
+  "numExecutors" : 2,
+  "name" : "null"
+}
+ 
+
+INFO:  2020-07-22 17:09:33,371 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkStageSubmitted",
+  "stageId" : 1,
+  "stageAttemptId" : 0,
+  "name" : "showString at NativeMethodAccessorImpl.java:0",
+  "numTasks" : 1,
+  "parentIds" : [ ],
+  "submissionTime" : 1595437773336,
+  "jobIds" : [ 1 ]
+}
+ 
+
+INFO:  2020-07-22 17:09:33,371 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkTaskStart",
+  "launchTime" : 1595437773342,
+  "taskId" : 1,
+  "stageId" : 1,
+  "stageAttemptId" : 0,
+  "index" : 0,
+  "attemptNumber" : 0,
+  "executorId" : "1",
+  "host" : "10.0.5.104",
+  "status" : "RUNNING",
+  "speculative" : false
+}
+ 
+
+INFO:  2020-07-22 17:09:34,608 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkTaskEnd",
+  "launchTime" : 1595437773342,
+  "finishTime" : 1595437774606,
+  "taskId" : 1,
+  "stageId" : 1,
+  "taskType" : "ResultTask",
+  "stageAttemptId" : 0,
+  "index" : 0,
+  "attemptNumber" : 0,
+  "executorId" : "1",
+  "host" : "10.0.5.104",
+  "status" : "SUCCESS",
+  "speculative" : false,
+  "metrics" : {
+    "shuffleReadTime" : 0,
+    "shuffleWriteTime" : 0,
+    "serializationTime" : 0,
+    "deserializationTime" : 317,
+    "gettingResultTime" : 0,
+    "executorComputingTime" : 918,
+    "schedulerDelay" : 29,
+    "shuffleReadTimeProportion" : 0.0,
+    "shuffleWriteTimeProportion" : 0.0,
+    "serializationTimeProportion" : 0.0,
+    "deserializationTimeProportion" : 25.079113924050635,
+    "gettingResultTimeProportion" : 0.0,
+    "executorComputingTimeProportion" : 72.62658227848101,
+    "schedulerDelayProportion" : 2.2943037974683547,
+    "shuffleReadTimeProportionPos" : 27.37341772151899,
+    "shuffleWriteTimeProportionPos" : 100.0,
+    "serializationTimeProportionPos" : 100.0,
+    "deserializationTimeProportionPos" : 2.2943037974683547,
+    "gettingResultTimeProportionPos" : 100.0,
+    "executorComputingTimeProportionPos" : 27.37341772151899,
+    "schedulerDelayProportionPos" : 0,
+    "resultSize" : 2102,
+    "jvmGCTime" : 50,
+    "memoryBytesSpilled" : 0,
+    "diskBytesSpilled" : 0,
+    "peakExecutionMemory" : 0,
+    "test" : 0
+  }
+}
+ 
+
+INFO:  2020-07-22 17:09:34,609 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkStageCompleted",
+  "stageId" : 1,
+  "stageAttemptId" : 0,
+  "completionTime" : 1595437774607,
+  "submissionTime" : 1595437773336,
+  "numTasks" : 1,
+  "status" : "COMPLETED"
+}
+ 
+
+INFO:  2020-07-22 17:09:34,609 - sparkmonitorkernel - 3752 - MainProcess -         139885336377088 - Thread-4
+ Message Received: 
+{
+  "msgtype" : "sparkJobEnd",
+  "jobId" : 1,
+  "status" : "SUCCEEDED",
+  "completionTime" : 1595437774607
+}
+ 
+
